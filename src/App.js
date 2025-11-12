@@ -41,7 +41,6 @@ function App() {
   const [currencySymbol, setCurrencySymbol] = useState(CURRENCIES.INR); // Feature 10: Currency
   const [darkMode, setDarkMode] = useState(false); // Feature 32: Dark Mode Toggle
   const [userName, setUserName] = useState("Jane Doe"); // Feature 31, 44: User Persona
-  const [userRole, setUserRole] = useState("Admin"); // Feature 45: User Role
   const [recurrent, setRecurrent] = useState(false); // Feature 6: Recurrence
   const [status, setStatus] = useState("Cleared"); // Feature 9: Status
   const [startDateFilter, setStartDateFilter] = useState(""); // Feature 36: Date Range Filter
@@ -50,7 +49,6 @@ function App() {
   const [isBulkMode, setIsBulkMode] = useState(false); // Feature 11: Bulk Delete Mode
   const [selectedTxns, setSelectedTxns] = useState(new Set()); 
   const [goal, setGoal] = useState({ name: "Travel Fund", target: 50000, saved: 15000 }); // Feature 26: Savings Goal
-  const [lastLogin, setLastLogin] = useState(new Date().toLocaleTimeString()); // Feature 43: Last Login Time
 
   // Filtering & Sorting States
   const [filterType, setFilterType] = useState("all"); 
