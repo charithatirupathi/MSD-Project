@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "homepage": "https://charithatirupathi.github.io/expense-tracker-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
