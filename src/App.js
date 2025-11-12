@@ -49,6 +49,9 @@ function App() {
   const [isBulkMode, setIsBulkMode] = useState(false); // Feature 11: Bulk Delete Mode
   const [selectedTxns, setSelectedTxns] = useState(new Set()); 
   const [goal, setGoal] = useState({ name: "Travel Fund", target: 50000, saved: 15000 }); // Feature 26: Savings Goal
+// ✅ Needed for Vercel build success
+  const [userRole, setUserRole] = useState("Admin");
+  const [lastLogin, setLastLogin] = useState(new Date().toLocaleTimeString());
 
   // Filtering & Sorting States
   const [filterType, setFilterType] = useState("all"); 
